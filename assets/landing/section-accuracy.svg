@@ -1,0 +1,12 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="640" rx="24" fill="#F5F0E8"/>
+  <rect x="74" y="66" width="812" height="508" rx="24" fill="#FCFAF6" stroke="#C8BFAF" stroke-width="2"/>
+  <rect x="118" y="112" width="276" height="416" rx="18" fill="#1A1814"/>
+  <text x="148" y="162" fill="#F5F0E8" font-family="Arial, sans-serif" font-size="22">Verification Library</text>
+  <rect x="148" y="198" width="216" height="42" rx="10" fill="#2A2520"/>
+  <rect x="148" y="256" width="216" height="42" rx="10" fill="#2A2520"/>
+  <rect x="148" y="314" width="216" height="42" rx="10" fill="#2A2520"/>
+  <rect x="438" y="148" width="382" height="104" rx="18" fill="#EDE7D9"/>
+  <rect x="438" y="280" width="382" height="104" rx="18" fill="#EDE7D9"/>
+  <rect x="438" y="412" width="240" height="64" rx="16" fill="#8B1A1A"/>
+</svg>

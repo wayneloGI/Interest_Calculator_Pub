@@ -1,0 +1,10 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="640" rx="24" fill="#F5F0E8"/>
+  <rect x="90" y="72" width="780" height="500" rx="24" fill="#FCFAF6" stroke="#C8BFAF" stroke-width="2"/>
+  <text x="132" y="138" fill="#6B6458" font-family="Arial, sans-serif" font-size="22">Calculation Settings</text>
+  <rect x="132" y="182" width="300" height="72" rx="14" fill="#EDE7D9"/>
+  <rect x="132" y="278" width="300" height="72" rx="14" fill="#EDE7D9"/>
+  <rect x="470" y="182" width="326" height="168" rx="18" fill="#1A1814"/>
+  <text x="516" y="276" fill="#F5F0E8" font-family="Times New Roman, serif" font-size="42">I = P × r × t</text>
+  <rect x="132" y="392" width="664" height="122" rx="18" fill="#E0D9CC"/>
+</svg>
