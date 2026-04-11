@@ -1,0 +1,13 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="640" rx="24" fill="#F5F0E8"/>
+  <rect x="88" y="72" width="784" height="496" rx="24" fill="#FCFAF6" stroke="#C8BFAF" stroke-width="2"/>
+  <text x="132" y="138" fill="#6B6458" font-family="Arial, sans-serif" font-size="22">Interest Period</text>
+  <rect x="132" y="180" width="280" height="72" rx="14" fill="#EDE7D9"/>
+  <rect x="132" y="278" width="340" height="92" rx="18" fill="#1C3D5A"/>
+  <text x="162" y="332" fill="#F5F0E8" font-family="Arial, sans-serif" font-size="28">CJ Rate</text>
+  <rect x="506" y="180" width="292" height="188" rx="18" fill="#EDE7D9"/>
+  <rect x="538" y="214" width="228" height="22" rx="11" fill="#C8BFAF"/>
+  <rect x="538" y="254" width="196" height="22" rx="11" fill="#C8BFAF"/>
+  <rect x="538" y="294" width="236" height="22" rx="11" fill="#C8BFAF"/>
+  <rect x="132" y="410" width="666" height="96" rx="18" fill="#E0D9CC"/>
+</svg>

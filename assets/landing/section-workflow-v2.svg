@@ -1,0 +1,77 @@
+<svg width="980" height="420" viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Base */
+    .card { fill:#ffffff; stroke:#e1dfdd; stroke-width:1; rx:12; }
+    .teams-bg { fill:#f3f2f1; }
+
+    /* Header */
+    .header { font-family:"Segoe UI", Arial, sans-serif; font-size:13px; fill:#201f1e; font-weight:600; }
+    .subtle { font-family:"Segoe UI", Arial, sans-serif; font-size:11px; fill:#605e5c; }
+
+    /* Chat */
+    .name { font-family:"Segoe UI", Arial, sans-serif; font-size:11px; fill:#605e5c; }
+    .msg-in { fill:#e6e6e6; rx:10; }
+    .msg-out { fill:#6264a7; rx:10; }
+    .text { font-family:"Segoe UI", Arial, sans-serif; font-size:12px; fill:#201f1e; }
+    .text-light { fill:#ffffff; font-family:"Segoe UI", Arial, sans-serif; font-size:12px; }
+
+    /* Avatar */
+    .avatar { fill:#6264a7; }
+    .avatar-text { fill:#fff; font-size:10px; font-family:"Segoe UI"; }
+
+    /* Divider */
+    .divider { stroke:#e1dfdd; stroke-width:1; }
+
+    /* Arrow */
+    .arrow { stroke:#a9443b; stroke-width:2; }
+  </style>
+
+  <!-- LEFT PANEL -->
+  <rect x="40" y="40" width="340" height="320" class="card teams-bg"/>
+
+  <!-- Header -->
+  <text x="60" y="65" class="header">Supervisor</text>
+  <line x1="50" y1="75" x2="370" y2="75" class="divider"/>
+
+  <!-- Avatar + sender name -->
+  <circle cx="65" cy="105" r="12" class="avatar"/>
+  <text x="60" y="109" class="avatar-text">S</text>
+  <text x="85" y="100" class="name">Supervisor</text>
+
+  <!-- Message 1 -->
+  <rect x="85" y="105" width="240" height="42" class="msg-in"/>
+  <text x="95" y="123" class="text">Judgment handed down,</text>
+  <text x="95" y="138" class="text">run the interest calculation by COB.</text>
+
+  <!-- Message 2 (grouped, no avatar) -->
+  <rect x="85" y="155" width="240" height="110" class="msg-in"/>
+  <text x="95" y="190" class="text">simple interest at 2.5% per annum</text>
+  <text x="95" y="205" class="text">on $33,511,220.32 from</text>
+  <text x="95" y="220" class="text"></text>
+  <text x="95" y="235" class="text">28 September 2000 until</text>
+  <text x="95" y="250" class="text">the date of judgment</text>
+
+  <!-- Outgoing -->
+  <rect x="190" y="275" width="135" height="34" class="msg-out"/>
+  <text x="205" y="297" class="text-light">Will do.</text>
+
+  <!-- Input hint (subtle realism) -->
+  <rect x="60" y="315" width="300" height="28" rx="6" fill="#ffffff" stroke="#e1dfdd"/>
+  <text x="70" y="333" class="subtle">Type a message</text>
+
+  <!-- SHORT ARROW -->
+  <line x1="395" y1="200" x2="430" y2="200" class="arrow"/>
+  <polygon points="430,200 420,194 420,206" fill="#a9443b"/>
+
+  <!-- RIGHT PANEL -->
+  <rect x="450" y="40" width="470" height="320" class="card"/>
+
+  <!-- IMAGE SLOT -->
+  <image
+    href="Calculator-Explanation.png"
+    x="460" y="50"
+    width="450"
+    height="300"
+    preserveAspectRatio="xMidYMid meet"
+  />
+</svg>

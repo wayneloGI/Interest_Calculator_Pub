@@ -1,0 +1,136 @@
+<svg width="680" height="450" viewBox="0 0 680 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Marker for the narrative arrows -->
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#A34827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    
+    <!-- Calendar Icon Definition -->
+    <g id="calendar-icon">
+      <rect x="0" y="2.5" width="13" height="11" rx="1" stroke="#6b6458" stroke-width="1.2" fill="none"/>
+      <line x1="0" y1="6" x2="13" y2="6" stroke="#6b6458" stroke-width="1.2"/>
+      <line x1="3.5" y1="1" x2="3.5" y2="4" stroke="#6b6458" stroke-width="1.2"/>
+      <line x1="9.5" y1="1" x2="9.5" y2="4" stroke="#6b6458" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="680" height="450" fill="#FFFFFF" />
+
+  <!-- ══════════════ LEFT COLUMN: THE PROBLEM ══════════════ -->
+  
+  <!-- BEAT 1: The Naive Input -->
+  <g transform="translate(40, 40)">
+    <!-- Period Card -->
+    <rect width="230" height="160" fill="white" stroke="#6b6458" stroke-width="0.5" />
+    
+    <!-- Header -->
+    <text x="12" y="22" font-family="'DM Mono', monospace" font-size="10" font-weight="bold" fill="#6b6458" letter-spacing="1">PERIOD 1</text>
+    
+    <!-- End Date Field -->
+    <text x="12" y="45" font-family="'DM Mono', monospace" font-size="8" fill="#6b6458">END DATE</text>
+    <rect x="12" y="52" width="206" height="32" fill="none" stroke="#6b6458" stroke-width="1" />
+    <text x="20" y="72" font-family="'DM Mono', monospace" font-size="12" fill="#1a1814">31/01/2025</text>
+    <use href="#calendar-icon" x="190" y="62" />
+    
+    <!-- Rate Field -->
+    <text x="12" y="98" font-family="'DM Mono', monospace" font-size="8" fill="#6b6458">RATE (%)</text>
+    <rect x="12" y="105" width="206" height="32" fill="none" stroke="#6b6458" stroke-width="1" />
+    <text x="20" y="125" font-family="'DM Mono', monospace" font-size="12" fill="#1a1814">8.875</text>
+    
+    <!-- Source Dropdown (CustomSelect style) -->
+    <text x="12" y="145" font-family="'DM Mono', monospace" font-size="8" fill="#6b6458">SOURCE</text>
+    <rect x="12" y="148" width="206" height="0" fill="none" stroke="#6b6458" stroke-width="0.5" /> <!-- Bottom border baseline -->
+    <text x="12" y="156" font-family="'Libre Baskerville', Georgia, serif" font-size="11" fill="#1a1814">HK Judgment Rate (8.875%)</text>
+    <text x="205" y="156" font-family="sans-serif" font-size="10" fill="#a1885f">▾</text>
+  </g>
+
+  <!-- Transition Arrow 1 -->
+  <line x1="155" y1="205" x2="155" y2="225" stroke="#A34827" stroke-width="1.5" marker-end="url(#arrowhead)" />
+
+  <!-- BEAT 2: The Detection -->
+  <g transform="translate(40, 230)">
+    <rect width="230" height="170" fill="#fef3c7" stroke="#d97706" stroke-width="1" />
+    
+    <!-- Warning Header -->
+    <text x="12" y="25" font-family="'DM Mono', monospace" font-size="10" font-weight="bold" fill="#d97706">⚠️ MULTIPLE RATES DETECTED</text>
+    
+    <!-- Message -->
+    <text x="12" y="48" font-family="'DM Mono', monospace" font-size="9" fill="#1a1814">Rate changed 1 time(s) during</text>
+    <text x="12" y="62" font-family="'DM Mono', monospace" font-size="9" fill="#1a1814">this period. Split into:</text>
+    
+    <!-- Rate List -->
+    <circle cx="18" cy="85" r="2" fill="#d97706" />
+    <text x="26" y="88" font-family="'DM Mono', monospace" font-size="10" fill="#1a1814">01/10/2024: 8.875%</text>
+    
+    <circle cx="18" cy="105" r="2" fill="#d97706" />
+    <text x="26" y="108" font-family="'DM Mono', monospace" font-size="10" fill="#1a1814">01/01/2025: 8.622%</text>
+    
+    <!-- Button -->
+    <rect x="12" y="130" width="206" height="30" fill="#d97706" rx="0" />
+    <text x="115" y="150" text-anchor="middle" font-family="'DM Mono', monospace" font-size="10" font-weight="bold" fill="#FFFFFF" letter-spacing="1">APPLY SPLIT</text>
+  </g>
+
+  <!-- Transition Arrow 2 (The Big Resolution) -->
+  <line x1="275" y1="315" x2="315" y2="315" stroke="#A34827" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- ══════════════ RIGHT COLUMN: THE RESOLUTION ══════════════ -->
+  
+  <g transform="translate(320, 40)">
+    <!-- Result Header -->
+    <text x="0" y="-15" font-family="'DM Mono', monospace" font-size="11" font-weight="bold" fill="#6b6458" letter-spacing="2">RESOLVED VIEW</text>
+
+    <!-- Period 1 Resolved -->
+    <g transform="translate(0, 0)">
+      <rect width="150" height="160" fill="white" stroke="#6b6458" stroke-width="0.5" />
+      <!-- Active Indicator (sig-v) -->
+      <rect width="3" height="160" fill="#A34827" />
+      
+      <text x="12" y="22" font-family="'DM Mono', monospace" font-size="10" font-weight="bold" fill="#6b6458" letter-spacing="1">PERIOD 1</text>
+      
+      <text x="12" y="45" font-family="'DM Mono', monospace" font-size="8" fill="#6b6458">END DATE</text>
+      <rect x="12" y="52" width="126" height="32" fill="none" stroke="#6b6458" stroke-width="1" />
+      <text x="20" y="72" font-family="'DM Mono', monospace" font-size="12" fill="#1a1814">31/12/2024</text>
+      <use href="#calendar-icon" x="118" y="62" />
+      
+      <text x="12" y="98" font-family="'DM Mono', monospace" font-size="8" fill="#6b6458">RATE (%)</text>
+      <rect x="12" y="105" width="126" height="32" fill="none" stroke="#6b6458" stroke-width="1" />
+      <text x="20" y="125" font-family="'DM Mono', monospace" font-size="12" fill="#1a1814">8.875</text>
+    </g>
+
+    <!-- Period 2 Resolved -->
+    <g transform="translate(165, 0)">
+      <rect width="150" height="160" fill="white" stroke="#6b6458" stroke-width="0.5" />
+      <!-- Active Indicator (sig-v) -->
+      <rect width="3" height="160" fill="#A34827" />
+      
+      <text x="12" y="22" font-family="'DM Mono', monospace" font-size="10" font-weight="bold" fill="#6b6458" letter-spacing="1">PERIOD 2</text>
+      
+      <text x="12" y="45" font-family="'DM Mono', monospace" font-size="8" fill="#6b6458">END DATE</text>
+      <rect x="12" y="52" width="126" height="32" fill="none" stroke="#6b6458" stroke-width="1" />
+      <text x="20" y="72" font-family="'DM Mono', monospace" font-size="12" fill="#1a1814">31/01/2025</text>
+      <use href="#calendar-icon" x="118" y="62" />
+      
+      <text x="12" y="98" font-family="'DM Mono', monospace" font-size="8" fill="#6b6458">RATE (%)</text>
+      <rect x="12" y="105" width="126" height="32" fill="none" stroke="#6b6458" stroke-width="1" />
+      <text x="20" y="125" font-family="'DM Mono', monospace" font-size="12" fill="#1a1814">8.622</text>
+    </g>
+
+    <!-- Timeline Axis -->
+    <g transform="translate(0, 220)">
+      <line x1="0" y1="0" x2="315" y2="0" stroke="#6b6458" stroke-width="1" />
+      
+      <!-- Node 1: Start -->
+      <circle cx="0" cy="0" r="4" fill="#A34827" />
+      <text x="0" y="20" text-anchor="middle" font-family="'DM Mono', monospace" font-size="9" fill="#1a1814">01 Dec 2024</text>
+      
+      <!-- Node 2: Split -->
+      <circle cx="157.5" cy="0" r="4" fill="#A34827" />
+      <text x="157.5" y="20" text-anchor="middle" font-family="'DM Mono', monospace" font-size="9" fill="#1a1814">31 Dec 2024</text>
+      
+      <!-- Node 3: End -->
+      <circle cx="315" cy="0" r="4" fill="#A34827" />
+      <text x="315" y="20" text-anchor="middle" font-family="'DM Mono', monospace" font-size="9" fill="#1a1814">31 Jan 2025</text>
+    </g>
+  </g>
+</svg>
